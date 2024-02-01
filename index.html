@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/CSS/reset.css">
+    <link rel="stylesheet" href="/assets/CSS/styles.css">
+    <script defer src="/assets/JS/index.js"></script>
+</head>
+<body class="bg formDisplay">
+    <form class="form">
+        <p class="title">Contact form</p>
+        <p class="shortInfo">Please fill in your information and we`ll be sending your order</p>
+        <div class="formInputField">
+            <div>Your name</div>
+            <div class="PlaceForInputeField">
+                <input tabindex = "1" required placeholder="first name" type="text" name="firstName" class="inputField firstName">
+                <input tabindex = "2" required placeholder="last name" type="text" name="lastName" class="inputField lastName">
+            </div>
+            
+            <div>Your email</div>
+            <div class="PlaceForInputeField">
+                <input tabindex = "3" required placeholder="email" type="email" name="email" class="inputField">
+            </div>
+    
+            <div>Phone *</div>
+            <div class="PlaceForInputeField">
+                <input tabindex = "4" placeholder="000" maxlength="3" type="text" name="firstNums" class="inputField">
+                <input tabindex = "5" placeholder="000" maxlength="3" type="text" name="middleNums" class="inputField">
+                <input tabindex = "6" placeholder="0000" maxlength="4" type="text" name="lastNums" class="inputField">
+            </div>
+
+            <div>Message subject *</div>
+            <div class="PlaceForInputeField">
+                <select tabindex = "7" class="inputField" name="subject">
+                    <option value="Other">Other</option>
+                    <option value="Complain">Complain</option>
+                </select>
+            </div>
+
+            <div>Message *</div>
+            <div class="PlaceForInputeField">
+                <textarea tabindex = "8" class="message" name="message" rows="10"></textarea>
+            </div>
+            
+        </div>
+        <hr size="1px" class="line">    
+        
+        <div class="formInputField">
+            <div></div>
+            <button tabindex = "9" type="submit" class="submitButton">SUBMIT FORM</button>
+            
+        </div>
+    </form>
+
+
+</body>
+
+</html>
